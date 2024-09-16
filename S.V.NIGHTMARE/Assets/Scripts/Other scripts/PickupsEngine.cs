@@ -14,6 +14,7 @@ public class PickupsEngine : MonoBehaviour
         {
             Destroy(gameObject);
             Score++;
+            PlayerDetection.isPlayerInRange = true;
         }
     }
 }

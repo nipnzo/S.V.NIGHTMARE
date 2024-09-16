@@ -78,14 +78,14 @@ public class PlayerMovement : MonoBehaviour
         CC.Move(localDir);
 
         //crouch
-        //if (Input.GetKey(KeyCode.C))
-        //{
-        //    transform.localScale = new Vector3(1, 1, 1);
-        //}
-        //else
-        //{
-        //    transform.localScale = new Vector3(1, 2, 1);
-        //}
+        if (Input.GetKey(KeyCode.C))
+        {
+            transform.localScale = new Vector3(1, 0.5f, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
     }
     void GravityEngine()
     {
